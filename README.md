@@ -88,5 +88,5 @@ docker-compose up -d
 **Fetch Currency Rates:**
 
  ```sh
-curl http://localhost:8080/crypto-currency-rates
+curl http://localhost:8080/currency-rates
 ```
