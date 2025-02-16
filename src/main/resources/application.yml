@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: my-spring-app
+
+  # Конфігурація Liquibase (JDBC)
+  liquibase:
+    enabled: true
+    url: jdbc:postgresql://postgres:5432/db_rate
+    user: user
+    password: user
+    change-log: classpath:/db/changelog/db.changelog-master.yaml
+
+  # Конфігурація R2DBC
+  r2dbc:
+    url: r2dbc:postgresql://postgres:5432/db_rate
+    username: user
+    password: user
